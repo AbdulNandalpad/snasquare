@@ -56,8 +56,8 @@ export default function Contact() {
                   {
                     icon: Mail,
                     label: 'Email',
-                    value: 'hello@snasquare.com',
-                    href: 'mailto:hello@snasquare.com',
+                    value: 'info@snasquare.com',
+                    href: 'mailto:info@snasquare.com',
                   },
                   {
                     icon: Phone,
