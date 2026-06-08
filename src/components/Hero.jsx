@@ -1,4 +1,5 @@
 import { ArrowRight, MessageCircle } from 'lucide-react'
+import HeroIllustration from './HeroIllustration'
 
 export default function Hero() {
   return (
@@ -68,16 +69,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mockup image */}
+        {/* Hero illustration */}
         <div className="flex-1 flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-md">
-            <div className="absolute inset-0 bg-brand-100 rounded-3xl rotate-3 opacity-60" />
-            <img
-              src="img/iPad-Pro-Design-Mockup.png"
-              alt="SNA Square product mockup"
-              className="relative rounded-2xl shadow-2xl w-full"
-            />
-          </div>
+          <HeroIllustration />
         </div>
       </div>
     </section>
