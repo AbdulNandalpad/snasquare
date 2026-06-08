@@ -20,9 +20,9 @@ export default function Hero() {
       {/* Blue glow top-right */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-brand-100 opacity-40 blur-3xl pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-28 pb-20 flex flex-col lg:flex-row items-center gap-16">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-16 flex flex-col md:flex-row items-center gap-10 lg:gap-16">
         {/* Text */}
-        <div className="flex-1 text-center lg:text-left">
+        <div className="flex-1 text-center md:text-left">
           <span className="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 text-brand-600 text-xs font-semibold tracking-wide uppercase border border-brand-100">
             15 Years of Expertise
           </span>
@@ -35,7 +35,7 @@ export default function Hero() {
             and IoT to HVAC automation and custom software — we transform your technical
             limitations into breakthrough opportunities.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="https://wa.me/917483984767"
               target="_blank"
@@ -55,7 +55,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="mt-14 flex flex-wrap gap-8 justify-center lg:justify-start">
+          <div className="mt-10 flex flex-wrap gap-8 justify-center md:justify-start">
             {[
               { value: '15+', label: 'Years Experience' },
               { value: '200+', label: 'Projects Delivered' },
@@ -69,8 +69,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero illustration */}
-        <div className="flex-1 flex justify-center lg:justify-end">
+        {/* Hero illustration — hidden on mobile, shown from tablet up */}
+        <div className="hidden md:flex flex-1 justify-center md:justify-end">
           <HeroIllustration />
         </div>
       </div>
