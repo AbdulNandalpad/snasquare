@@ -1,6 +1,16 @@
-import { Cpu, Wifi, Thermometer, Code2, BarChart3, Shield } from 'lucide-react'
+import { Cpu, Wifi, Thermometer, Code2, BarChart3, Shield, Layers } from 'lucide-react'
 
 const services = [
+  {
+    icon: Layers,
+    title: 'BPMSquare — CRM & Field Service',
+    description:
+      'Our own SaaS platform for service businesses: manage customers, jobs, technicians, and invoices in one place. Role-based access, real-time dashboards, and mobile-ready.',
+    accent: 'bg-orange-50 text-orange-500',
+    link: 'https://app.bpmsquare.com',
+    linkLabel: 'Try BPMSquare →',
+    featured: true,
+  },
   {
     icon: Cpu,
     title: 'RFID Solutions',
@@ -65,16 +75,31 @@ export default function Services() {
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map(({ icon: Icon, title, description, accent }) => (
+          {services.map(({ icon: Icon, title, description, accent, link, linkLabel, featured }) => (
             <div
               key={title}
-              className="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+              className={`bg-white rounded-2xl p-7 border shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group ${featured ? 'border-orange-200 ring-1 ring-orange-100' : 'border-slate-100'}`}
             >
+              {featured && (
+                <span className="inline-block mb-3 px-2 py-0.5 rounded-full bg-orange-100 text-orange-600 text-xs font-semibold tracking-wide uppercase">
+                  Our Product
+                </span>
+              )}
               <div className={`inline-flex p-3 rounded-xl ${accent} mb-5`}>
                 <Icon size={22} />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">{title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{description}</p>
+              {link && (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center mt-4 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors"
+                >
+                  {linkLabel}
+                </a>
+              )}
             </div>
           ))}
         </div>

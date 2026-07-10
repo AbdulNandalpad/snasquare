@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from 'lucide-react'
+import { ArrowRight, MessageCircle, ExternalLink } from 'lucide-react'
 import HeroIllustration from './HeroIllustration'
 
 export default function Hero() {
@@ -66,6 +66,29 @@ export default function Hero() {
                 <p className="text-sm text-slate-500 mt-0.5">{s.label}</p>
               </div>
             ))}
+          </div>
+
+          {/* BPMSquare spotlight */}
+          <div className="mt-10 flex items-start gap-4 rounded-2xl border border-orange-100 bg-orange-50 px-5 py-4 max-w-xl mx-auto md:mx-0">
+            <div className="shrink-0 w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white font-bold text-sm">
+              BPM
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-slate-900">
+                Introducing BPMSquare — our CRM &amp; Field Service platform
+              </p>
+              <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                Manage customers, jobs, and teams in one place. Built for service businesses ready to scale.
+              </p>
+              <a
+                href="https://app.bpmsquare.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-orange-600 hover:text-orange-700 transition-colors"
+              >
+                Try BPMSquare free <ExternalLink size={12} />
+              </a>
+            </div>
           </div>
         </div>
 
