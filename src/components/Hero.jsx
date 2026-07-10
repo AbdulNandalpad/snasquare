@@ -20,7 +20,7 @@ export default function Hero() {
       {/* Blue glow top-right */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-brand-100 opacity-40 blur-3xl pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-16 flex flex-col md:flex-row items-center gap-10 lg:gap-16">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-16 flex flex-col md:flex-row items-start gap-10 lg:gap-16">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
           <span className="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 text-brand-600 text-xs font-semibold tracking-wide uppercase border border-brand-100">
@@ -81,7 +81,7 @@ export default function Hero() {
                 Manage customers, jobs, and teams in one place. Built for service businesses ready to scale.
               </p>
               <a
-                href="https://app.bpmsquare.com"
+                href="https://www.bpmsquare.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-orange-600 hover:text-orange-700 transition-colors"

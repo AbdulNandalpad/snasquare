@@ -7,7 +7,7 @@ const services = [
     description:
       'Our own SaaS platform for service businesses: manage customers, jobs, technicians, and invoices in one place. Role-based access, real-time dashboards, and mobile-ready.',
     accent: 'bg-orange-50 text-orange-500',
-    link: 'https://app.bpmsquare.com',
+    link: 'https://www.bpmsquare.com/',
     linkLabel: 'Try BPMSquare →',
     featured: true,
   },
