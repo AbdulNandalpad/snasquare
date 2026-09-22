@@ -5,20 +5,15 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex items-center overflow-hidden bg-white"
+      className="relative flex items-center overflow-hidden"
+      style={{
+        background:
+          'linear-gradient(135deg, #eef2ff 0%, #f3ebfd 30%, #eaf2ff 65%, #ffffff 100%)',
+      }}
     >
-      {/* Subtle grid background */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)',
-          backgroundSize: '48px 48px',
-          opacity: 0.4,
-        }}
-      />
-      {/* Blue glow top-right */}
-      <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-brand-100 opacity-40 blur-3xl pointer-events-none" />
+      {/* Soft color glows */}
+      <div className="absolute -top-32 -right-24 w-[600px] h-[600px] rounded-full bg-brand-200 opacity-40 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-24 w-[500px] h-[500px] rounded-full bg-violet-200 opacity-40 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-16 flex flex-col md:flex-row items-start gap-10 lg:gap-16">
         {/* Text */}
