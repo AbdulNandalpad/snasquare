@@ -21,7 +21,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-24 overflow-hidden bg-white">
-      <div className="absolute top-1/2 -translate-y-1/2 -right-32 w-[500px] h-[500px] rounded-full bg-brand-100 opacity-25 blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 -translate-y-1/2 -right-32 w-[500px] h-[500px] rounded-full bg-brand-200 opacity-40 blur-3xl pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

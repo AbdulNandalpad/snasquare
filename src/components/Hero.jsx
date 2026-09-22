@@ -8,12 +8,12 @@ export default function Hero() {
       className="relative flex items-center overflow-hidden"
       style={{
         background:
-          'linear-gradient(135deg, #eef2ff 0%, #f3ebfd 30%, #eaf2ff 65%, #ffffff 100%)',
+          'linear-gradient(135deg, #dde3fd 0%, #e4d6fb 30%, #d7e6fd 65%, #f8fafc 100%)',
       }}
     >
       {/* Soft color glows */}
-      <div className="absolute -top-32 -right-24 w-[600px] h-[600px] rounded-full bg-brand-200 opacity-40 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 -left-24 w-[500px] h-[500px] rounded-full bg-violet-200 opacity-40 blur-3xl pointer-events-none" />
+      <div className="absolute -top-32 -right-24 w-[600px] h-[600px] rounded-full bg-brand-300 opacity-50 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-24 w-[500px] h-[500px] rounded-full bg-violet-300 opacity-50 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-24 pb-16 flex flex-col md:flex-row items-start gap-10 lg:gap-16">
         {/* Text */}

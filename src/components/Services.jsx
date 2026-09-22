@@ -58,8 +58,8 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="relative py-24 overflow-hidden bg-slate-50">
-      <div className="absolute -top-24 right-0 w-[450px] h-[450px] rounded-full bg-brand-100 opacity-30 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-violet-100 opacity-40 blur-3xl pointer-events-none" />
+      <div className="absolute -top-24 right-0 w-[450px] h-[450px] rounded-full bg-brand-200 opacity-45 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-violet-200 opacity-50 blur-3xl pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
