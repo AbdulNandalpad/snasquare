@@ -105,9 +105,9 @@ export default function Services() {
         </div>
 
         {/* CTA strip */}
-        <div className="mt-16 rounded-2xl bg-brand-500 p-10 text-center text-white">
+        <div className="mt-16 rounded-2xl bg-slate-900 p-10 text-center text-white">
           <h3 className="text-2xl font-bold mb-2">Not sure what you need?</h3>
-          <p className="text-brand-100 mb-6">
+          <p className="text-slate-300 mb-6">
             Tell us your challenge and we'll recommend the right solution — no jargon, no pressure.
           </p>
           <a

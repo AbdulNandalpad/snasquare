@@ -40,7 +40,7 @@ export default function Hero() {
               href="https://wa.me/917483984767"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-all shadow-md hover:shadow-lg"
             >
               <MessageCircle size={18} />
               Chat on WhatsApp

@@ -44,7 +44,7 @@ export default function Navbar() {
             href="https://wa.me/917483984767"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 px-4 py-2 rounded-lg bg-brand-500 text-white text-sm font-semibold hover:bg-brand-600 transition-colors shadow-sm"
+            className="ml-2 px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800 transition-colors shadow-sm"
           >
             Get Started
           </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
             href="https://wa.me/917483984767"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-brand-500 text-white text-sm font-semibold text-center"
+            className="px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold text-center"
           >
             Get Started
           </a>
