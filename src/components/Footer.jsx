@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-400 py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
-          <img src="img/logo1.svg" alt="SNA Square" className="h-8 w-auto brightness-0 invert opacity-80" />
+          <img src="img/logo1.svg" alt="SNA Square" className="h-7 w-auto opacity-80" />
           <span className="text-sm text-slate-500">Bangalore, India</span>
         </div>
 

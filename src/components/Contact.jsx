@@ -1,33 +1,22 @@
 import { useState } from 'react'
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react'
 
-const FORMSPREE_ID = 'YOUR_FORMSPREE_ID' // replace after creating form at formspree.io
+const CONTACT_EMAIL = 'sna2care@gmail.com'
 
 export default function Contact() {
-  const [status, setStatus] = useState('idle') // idle | submitting | success | error
+  const [status, setStatus] = useState('idle') // idle | success
   const [form, setForm] = useState({ name: '', email: '', message: '' })
 
   const handleChange = e =>
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault()
-    setStatus('submitting')
-    try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(form),
-      })
-      if (res.ok) {
-        setStatus('success')
-        setForm({ name: '', email: '', message: '' })
-      } else {
-        setStatus('error')
-      }
-    } catch {
-      setStatus('error')
-    }
+    const subject = `New inquiry from ${form.name}`
+    const body = `${form.message}\n\n— ${form.name} (${form.email})`
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    setStatus('success')
+    setForm({ name: '', email: '', message: '' })
   }
 
   return (
@@ -120,13 +109,13 @@ export default function Contact() {
             {status === 'success' ? (
               <div className="flex flex-col items-center justify-center py-12 text-center gap-4">
                 <CheckCircle2 size={48} className="text-emerald-500" />
-                <h3 className="text-xl font-semibold text-slate-900">Message sent!</h3>
-                <p className="text-slate-500">We'll get back to you within 24 hours.</p>
+                <h3 className="text-xl font-semibold text-slate-900">Almost there!</h3>
+                <p className="text-slate-500">Your email app should have opened with your message ready — just hit send.</p>
                 <button
                   onClick={() => setStatus('idle')}
                   className="mt-2 text-sm text-brand-500 hover:underline"
                 >
-                  Send another message
+                  Back to form
                 </button>
               </div>
             ) : (
@@ -175,25 +164,12 @@ export default function Contact() {
                   />
                 </div>
 
-                {status === 'error' && (
-                  <p className="text-sm text-red-500">
-                    Something went wrong. Please try again or reach out on WhatsApp.
-                  </p>
-                )}
-
                 <button
                   type="submit"
-                  disabled={status === 'submitting'}
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 disabled:opacity-60 disabled:cursor-not-allowed transition-all shadow-sm"
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition-all shadow-sm"
                 >
-                  {status === 'submitting' ? (
-                    'Sending…'
-                  ) : (
-                    <>
-                      <Send size={16} />
-                      Send Message
-                    </>
-                  )}
+                  <Send size={16} />
+                  Send Message
                 </button>
               </form>
             )}

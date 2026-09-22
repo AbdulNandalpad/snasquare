@@ -53,21 +53,6 @@ export default function Hero() {
               <ArrowRight size={16} />
             </a>
           </div>
-
-          {/* Stats */}
-          <div className="mt-10 flex flex-wrap gap-8 justify-center md:justify-start">
-            {[
-              { value: '15+', label: 'Years Experience' },
-              { value: '200+', label: 'Projects Delivered' },
-              { value: '50+', label: 'Happy Clients' },
-            ].map(s => (
-              <div key={s.label}>
-                <p className="text-3xl font-bold text-slate-900">{s.value}</p>
-                <p className="text-sm text-slate-500 mt-0.5">{s.label}</p>
-              </div>
-            ))}
-          </div>
-
         </div>
 
         {/* Hero illustration — hidden on mobile, shown from tablet up */}
